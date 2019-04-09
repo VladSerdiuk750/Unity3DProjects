@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 96238e894efb33c40a84e9170640b311
+timeCreated: 1436958855
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: knight_idle_0
+    21300002: knight_idle_1
+    21300004: knight_idle_2
+    21300006: knight_idle_3
+    21300008: knight_idle_4
+    21300010: knight_idle_5
+    21300012: knight_idle_6
+    21300014: knight_idle_7
+    21300016: knight_idle_8
+    21300018: knight_idle_9
+    21300020: knight_idle_10
+    21300022: knight_idle_11
+    21300024: knight_idle_12
+    21300026: knight_idle_13
+    21300028: knight_idle_14
+    21300030: knight_idle_15
+    21300032: knight_idle_16
+    21300034: knight_idle_17
+    21300036: knight_idle_18
+    21300038: knight_idle_19
+    21300040: knight_idle_20
+    21300042: knight_idle_21
+    21300044: knight_idle_22
+    21300046: knight_idle_23
+    21300048: knight_idle_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: knight_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 3}
+        - {x: -61, y: -20}
+        - {x: -61, y: -67}
+        - {x: -55, y: -68}
+        - {x: 13, y: -68}
+        - {x: 64, y: -32}
+        - {x: 64, y: 1}
+        - {x: 47, y: 3}
+    - name: knight_idle_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: -19}
+        - {x: 64, y: -12}
+        - {x: 50, y: -9}
+        - {x: 8, y: 2}
+        - {x: -40, y: 2}
+        - {x: -61, y: -24}
+        - {x: -61, y: -64}
+        - {x: -49, y: -68}
+        - {x: -2, y: -68}
+        - {x: -1, y: -66}
+        - {x: 30, y: -57}
+        - {x: 62, y: -25}
+    - name: knight_idle_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: -9}
+        - {x: 35, y: -18}
+        - {x: -7, y: 2}
+        - {x: -40, y: 2}
+        - {x: -61, y: -25}
+        - {x: -61, y: -64}
+        - {x: -51, y: -68}
+        - {x: 5, y: -68}
+        - {x: 30, y: -63}
+        - {x: 60, y: -31}
+        - {x: 65, y: -20}
+        - {x: 65, y: -12}
+    - name: knight_idle_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: -13}
+        - {x: 52, y: -12}
+        - {x: 17, y: 2}
+        - {x: -35, y: 2}
+        - {x: -61, y: -11}
+        - {x: -61, y: -65}
+        - {x: -55, y: -68}
+        - {x: 6, y: -68}
+        - {x: 29, y: -62}
+        - {x: 61, y: -30}
+        - {x: 65, y: -23}
+        - {x: 65, y: -16}
+    - name: knight_idle_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 2}
+        - {x: -53, y: 2}
+        - {x: -61, y: -21}
+        - {x: -61, y: -68}
+        - {x: 15, y: -68}
+        - {x: 65, y: -34}
+        - {x: 65, y: -15}
+        - {x: 51, y: -12}
+    - name: knight_idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 2}
+        - {x: -61, y: -3}
+        - {x: -61, y: -68}
+        - {x: 21, y: -68}
+        - {x: 66, y: -41}
+        - {x: 66, y: -14}
+        - {x: 30, y: 2}
+    - name: knight_idle_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 2}
+        - {x: -54, y: 2}
+        - {x: -60, y: -16}
+        - {x: -60, y: -68}
+        - {x: 36, y: -68}
+        - {x: 66, y: -29}
+        - {x: 66, y: -10}
+        - {x: 64, y: -8}
+    - name: knight_idle_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 1}
+        - {x: -47, y: 1}
+        - {x: -61, y: -19}
+        - {x: -61, y: -64}
+        - {x: -51, y: -68}
+        - {x: 28, y: -68}
+        - {x: 67, y: -39}
+        - {x: 67, y: -19}
+        - {x: 52, y: -13}
+    - name: knight_idle_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 1}
+        - {x: -60, y: -68}
+        - {x: 22, y: -68}
+        - {x: 67, y: -48}
+        - {x: 67, y: -21}
+        - {x: 51, y: 1}
+    - name: knight_idle_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 1}
+        - {x: -55, y: -19}
+        - {x: -61, y: -35}
+        - {x: -61, y: -68}
+        - {x: 24, y: -68}
+        - {x: 67, y: -43}
+        - {x: 67, y: -10}
+        - {x: 18, y: 1}
+    - name: knight_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 1}
+        - {x: -43, y: 1}
+        - {x: -59, y: -21}
+        - {x: -60, y: -25}
+        - {x: -60, y: -68}
+        - {x: 18, y: -68}
+        - {x: 66, y: -43}
+        - {x: 67, y: -40}
+        - {x: 67, y: -13}
+    - name: knight_idle_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 1}
+        - {x: -37, y: 1}
+        - {x: -60, y: -24}
+        - {x: -60, y: -68}
+        - {x: 15, y: -68}
+        - {x: 64, y: -36}
+        - {x: 68, y: -34}
+        - {x: 68, y: -11}
+    - name: knight_idle_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55, y: -22}
+        - {x: -4, y: 1}
+        - {x: -36, y: 1}
+        - {x: -60, y: -23}
+        - {x: -60, y: -63}
+        - {x: -55, y: -68}
+        - {x: 18, y: -68}
+        - {x: 68, y: -49}
+        - {x: 68, y: -26}
+        - {x: 64, y: -24}
+    - name: knight_idle_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 1}
+        - {x: -60, y: -68}
+        - {x: 50, y: -68}
+        - {x: 68, y: -39}
+        - {x: 68, y: 1}
+    - name: knight_idle_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67, y: -30}
+        - {x: 67, y: -19}
+        - {x: 52, y: -11}
+        - {x: 1, y: 1}
+        - {x: -41, y: 1}
+        - {x: -59, y: -21}
+        - {x: -60, y: -24}
+        - {x: -60, y: -68}
+        - {x: 12, y: -68}
+        - {x: 23, y: -60}
+        - {x: 27, y: -55}
+        - {x: 62, y: -39}
+    - name: knight_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: -18}
+        - {x: 47, y: -20}
+        - {x: 7, y: 1}
+        - {x: -44, y: 1}
+        - {x: -61, y: -13}
+        - {x: -61, y: -68}
+        - {x: 19, y: -68}
+        - {x: 67, y: -32}
+        - {x: 67, y: -21}
+        - {x: 66, y: -20}
+    - name: knight_idle_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 1}
+        - {x: -60, y: -23}
+        - {x: -60, y: -68}
+        - {x: 9, y: -68}
+        - {x: 67, y: -35}
+        - {x: 67, y: -19}
+        - {x: 1, y: 1}
+    - name: knight_idle_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 1}
+        - {x: -59, y: -7}
+        - {x: -61, y: -17}
+        - {x: -61, y: -68}
+        - {x: 45, y: -68}
+        - {x: 67, y: -33}
+        - {x: 67, y: -17}
+        - {x: -1, y: 1}
+    - name: knight_idle_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 2}
+        - {x: -61, y: -12}
+        - {x: -61, y: -65}
+        - {x: -59, y: -68}
+        - {x: 14, y: -68}
+        - {x: 66, y: -36}
+        - {x: 66, y: -11}
+        - {x: 19, y: 2}
+    - name: knight_idle_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 2}
+        - {x: -61, y: -3}
+        - {x: -61, y: -68}
+        - {x: 21, y: -68}
+        - {x: 66, y: -41}
+        - {x: 66, y: -14}
+        - {x: 30, y: 2}
+    - name: knight_idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 2}
+        - {x: -53, y: 2}
+        - {x: -61, y: -21}
+        - {x: -61, y: -68}
+        - {x: 15, y: -68}
+        - {x: 65, y: -34}
+        - {x: 65, y: -15}
+        - {x: 51, y: -12}
+    - name: knight_idle_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40, y: 2}
+        - {x: -61, y: -29}
+        - {x: -61, y: -68}
+        - {x: 53, y: -68}
+        - {x: 65, y: -45}
+        - {x: 65, y: -3}
+        - {x: 16, y: 2}
+    - name: knight_idle_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 2}
+        - {x: -61, y: 2}
+        - {x: -61, y: -68}
+        - {x: 47, y: -68}
+        - {x: 62, y: -29}
+        - {x: 65, y: -21}
+        - {x: 65, y: -8}
+    - name: knight_idle_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -11}
+        - {x: 40, y: -17}
+        - {x: 4, y: 2}
+        - {x: -49, y: 2}
+        - {x: -61, y: -21}
+        - {x: -61, y: -68}
+        - {x: 24, y: -68}
+        - {x: 40, y: -66}
+        - {x: 64, y: -22}
+        - {x: 64, y: -13}
+        - {x: 63, y: -11}
+    - name: knight_idle_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 3}
+        - {x: -61, y: -20}
+        - {x: -61, y: -67}
+        - {x: -55, y: -68}
+        - {x: 13, y: -68}
+        - {x: 64, y: -32}
+        - {x: 64, y: 1}
+        - {x: 47, y: 3}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

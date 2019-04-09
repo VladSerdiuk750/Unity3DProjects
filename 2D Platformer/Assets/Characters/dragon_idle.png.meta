@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: f69a974789e7bf340b2f6509eab6ff71
+timeCreated: 1436958766
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dragon_idle_0
+    21300002: dragon_idle_1
+    21300004: dragon_idle_2
+    21300006: dragon_idle_3
+    21300008: dragon_idle_4
+    21300010: dragon_idle_5
+    21300012: dragon_idle_6
+    21300014: dragon_idle_7
+    21300016: dragon_idle_8
+    21300018: dragon_idle_9
+    21300020: dragon_idle_10
+    21300022: dragon_idle_11
+    21300024: dragon_idle_12
+    21300026: dragon_idle_13
+    21300028: dragon_idle_14
+    21300030: dragon_idle_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dragon_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 24}
+        - {x: -44, y: 7}
+        - {x: -44, y: -20}
+        - {x: -43, y: -24}
+        - {x: -3, y: -32}
+        - {x: 33, y: -32}
+        - {x: 46, y: -15}
+        - {x: 46, y: 11}
+        - {x: 16, y: 24}
+    - name: dragon_idle_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 24}
+        - {x: -44, y: 4}
+        - {x: -44, y: -17}
+        - {x: -32, y: -25}
+        - {x: -12, y: -22}
+        - {x: -1, y: -31}
+        - {x: 2, y: -32}
+        - {x: 32, y: -32}
+        - {x: 46, y: -25}
+        - {x: 46, y: 24}
+    - name: dragon_idle_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 24}
+        - {x: -17, y: 24}
+        - {x: -44, y: 3}
+        - {x: -44, y: -8}
+        - {x: -42, y: -17}
+        - {x: -32, y: -27}
+        - {x: -18, y: -32}
+        - {x: 26, y: -32}
+        - {x: 46, y: -4}
+        - {x: 46, y: 6}
+        - {x: 31, y: 19}
+    - name: dragon_idle_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 24}
+        - {x: -44, y: 13}
+        - {x: -44, y: -32}
+        - {x: 33, y: -32}
+        - {x: 46, y: -15}
+        - {x: 46, y: 9}
+        - {x: 38, y: 24}
+    - name: dragon_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 23}
+        - {x: -22, y: 23}
+        - {x: -44, y: 5}
+        - {x: -44, y: -18}
+        - {x: -28, y: -32}
+        - {x: 27, y: -32}
+        - {x: 47, y: -6}
+        - {x: 47, y: 1}
+        - {x: 42, y: 10}
+    - name: dragon_idle_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 23}
+        - {x: -44, y: 1}
+        - {x: -44, y: -11}
+        - {x: -32, y: -26}
+        - {x: -9, y: -22}
+        - {x: -1, y: -32}
+        - {x: 27, y: -32}
+        - {x: 47, y: -17}
+        - {x: 47, y: 9}
+        - {x: 29, y: 23}
+    - name: dragon_idle_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 23}
+        - {x: -19, y: 23}
+        - {x: -44, y: 3}
+        - {x: -44, y: -9}
+        - {x: -40, y: -16}
+        - {x: -35, y: -24}
+        - {x: -25, y: -26}
+        - {x: -9, y: -22}
+        - {x: -4, y: -18}
+        - {x: 2, y: -32}
+        - {x: 28, y: -32}
+        - {x: 47, y: -5}
+        - {x: 47, y: 7}
+        - {x: 30, y: 20}
+    - name: dragon_idle_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 23}
+        - {x: -44, y: 8}
+        - {x: -44, y: -20}
+        - {x: -40, y: -29}
+        - {x: -17, y: -32}
+        - {x: 31, y: -32}
+        - {x: 47, y: -4}
+        - {x: 47, y: 12}
+        - {x: 26, y: 23}
+    - name: dragon_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 23}
+        - {x: -44, y: 4}
+        - {x: -44, y: -15}
+        - {x: -43, y: -17}
+        - {x: -31, y: -30}
+        - {x: -18, y: -32}
+        - {x: 38, y: -32}
+        - {x: 47, y: -9}
+        - {x: 47, y: 12}
+        - {x: 20, y: 23}
+    - name: dragon_idle_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 23}
+        - {x: -18, y: 23}
+        - {x: -44, y: 4}
+        - {x: -44, y: -20}
+        - {x: -42, y: -31}
+        - {x: -30, y: -32}
+        - {x: 36, y: -32}
+        - {x: 47, y: -6}
+        - {x: 47, y: 9}
+        - {x: 30, y: 16}
+    - name: dragon_idle_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 23}
+        - {x: -30, y: 23}
+        - {x: -44, y: 3}
+        - {x: -44, y: -32}
+        - {x: 30, y: -32}
+        - {x: 47, y: -18}
+        - {x: 47, y: 4}
+        - {x: 31, y: 17}
+    - name: dragon_idle_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 23}
+        - {x: -20, y: 23}
+        - {x: -44, y: 4}
+        - {x: -44, y: -28}
+        - {x: -13, y: -32}
+        - {x: 32, y: -32}
+        - {x: 47, y: -7}
+        - {x: 47, y: 4}
+        - {x: 44, y: 12}
+    - name: dragon_idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 24}
+        - {x: -26, y: 24}
+        - {x: -44, y: 4}
+        - {x: -44, y: -25}
+        - {x: -40, y: -32}
+        - {x: 31, y: -32}
+        - {x: 47, y: -6}
+        - {x: 47, y: 1}
+        - {x: 42, y: 10}
+    - name: dragon_idle_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 24}
+        - {x: -44, y: 19}
+        - {x: -44, y: -32}
+        - {x: 35, y: -32}
+        - {x: 46, y: -15}
+        - {x: 46, y: 14}
+        - {x: 25, y: 24}
+    - name: dragon_idle_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 24}
+        - {x: -44, y: 15}
+        - {x: -44, y: -17}
+        - {x: -40, y: -32}
+        - {x: 31, y: -32}
+        - {x: 46, y: -20}
+        - {x: 46, y: 14}
+        - {x: 23, y: 24}
+    - name: dragon_idle_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 24}
+        - {x: -44, y: 7}
+        - {x: -44, y: -20}
+        - {x: -43, y: -24}
+        - {x: -3, y: -32}
+        - {x: 33, y: -32}
+        - {x: 46, y: -15}
+        - {x: 46, y: 11}
+        - {x: 16, y: 24}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
