@@ -25,6 +25,10 @@ public class Character : MonoBehaviour
 
     private float rocketDamage = 20f;
 
+    [SerializeField] private float bulletDelay;
+
+    private float bulletDelayCurrent;
+    
     [SerializeField]
     private float rocketDelay;
 
@@ -57,20 +61,29 @@ public class Character : MonoBehaviour
         {
             rocketDelayCurrent -= Time.deltaTime;
         }
+
+        if (bulletDelayCurrent > 0)
+        {
+            bulletDelayCurrent -= Time.deltaTime;
+        }
     }
 
     public void ShootBullet(Vector3 direction)
     {
-        GameObject newBullet = Instantiate(bulletPrefab, gun.position, gun.rotation) as GameObject;
+        if (bulletDelayCurrent <= 0)
+        {
+            bulletDelayCurrent = bulletDelay;
+            GameObject newBullet = Instantiate(bulletPrefab, gun.position, gun.rotation) as GameObject;
 
-        newBullet.GetComponent<Rigidbody>().AddForce(direction * shootPower);
+            newBullet.GetComponent<Rigidbody>().AddForce(direction * shootPower);
 
-        Damager bulletBehaviour = newBullet.GetComponent<Damager>();
+            Damager bulletBehaviour = newBullet.GetComponent<Damager>();
 
-        bulletBehaviour.Damage = bulletDamage;
-        bulletBehaviour.Owner = gameObject;
+            bulletBehaviour.Damage = bulletDamage;
+            bulletBehaviour.Owner = gameObject;
 
-        Destroy(newBullet.gameObject, 5);
+            Destroy(newBullet.gameObject, 5);
+        }
     }
 
     // Start is called before the first frame update

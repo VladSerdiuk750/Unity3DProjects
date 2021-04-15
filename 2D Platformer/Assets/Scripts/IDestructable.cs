@@ -5,6 +5,6 @@ using UnityEngine;
 public interface IDestructable
 {
     float Health { get; set; }
-    void Hit(float damage);
+    void ReceiveHit(float damage);
     void Die();
 }

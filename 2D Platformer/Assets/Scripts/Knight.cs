@@ -45,7 +45,8 @@ public class Knight : Creature, IDestructable
 
     private void Start()
     {
-        health = GameController.Instance.MaxHealth;
+        GameController.Instance.Knight = this;
+        GameController.Instance.OnUpdateHeroParameters += HandleOnUpdateHeroParameters;
     }
 
     // Update is called once per frame
@@ -110,20 +111,19 @@ public class Knight : Creature, IDestructable
 
     private void Attack()
     {
-        var hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        DoHit(attackPoint.position, attackRange, Damage);
+        GameController.Instance.AudioManager.PlaySoundRandomPitch("DM-CGS-46");
+    }
 
-        foreach (var hit in hits)
-        {
-            if(!GameObject.Equals(hit.gameObject, gameObject))
-            {
-                IDestructable destructable = hit.gameObject.GetComponent<IDestructable>();
+    private void OnDestroy()
+    {
+        GameController.Instance.OnUpdateHeroParameters -= HandleOnUpdateHeroParameters;
+    }
 
-                if(destructable != null)
-                {
-                    destructable.Hit(damage);
-                    break;
-                }
-            }
-        }
+    private void HandleOnUpdateHeroParameters(HeroParameters parameters)
+    {
+        Health = parameters.MaxHealth;
+        Damage = parameters.Damage;
+        Speed = parameters.Speed;
     }
 }

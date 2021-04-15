@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class Creature : MonoBehaviour, IDestructable
 {
@@ -19,8 +21,20 @@ public class Creature : MonoBehaviour, IDestructable
     [SerializeField]
     protected float speed;
 
+    public float Speed
+    {
+        get => speed;
+        set => speed = value;
+    }
+
     [SerializeField]
     protected float damage;
+
+    public float Damage
+    {
+        get => damage;
+        set => damage = value;
+    }
 
     private void Awake()
     {
@@ -28,7 +42,7 @@ public class Creature : MonoBehaviour, IDestructable
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    public void Hit(float damage)
+    public void ReceiveHit(float damage)
     {
         Health -= damage;
         GameController.Instance.Hit(this);
@@ -38,8 +52,27 @@ public class Creature : MonoBehaviour, IDestructable
         }
     }
 
+    protected void DoHit(Vector3 hitPosition, float hitRadius, float hitDamage)
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(hitPosition, hitRadius);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (!GameObject.Equals(hits[i].gameObject, gameObject))
+            {
+                IDestructable destructable = hits[i].gameObject.GetComponent<IDestructable>();
+                if (destructable != null)
+                {
+                    destructable.ReceiveHit(hitDamage);
+                }
+            }
+        }
+    }
+
     public void Die()
     {
-        Destroy(gameObject);
+        GameController.Instance.Killed(this);
     }
+
+
 }

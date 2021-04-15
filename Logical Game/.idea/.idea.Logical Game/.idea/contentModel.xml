@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Vultys\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vultys\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_Logical Game.-1021080343.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vultys\Documents\GitHub\Unity3DEducation\Logical Game" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Audio.cs" t="Include" />
+          <e p="Controller.cs" t="Include" />
+          <e p="DataStore.cs" t="Include" />
+          <e p="Field.cs" t="Include" />
+          <e p="Hud.cs" t="Include" />
+          <e p="LevelParameters.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
+          <e p="Token.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Logical Game.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

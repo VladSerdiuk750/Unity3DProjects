@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Vultys\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vultys\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_2D Platformer.-342556926.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Vultys\Desktop\Unity3DEducation\2D Platformer" t="IncludeRecursive">
+    <e p="C:\Users\Vultys\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_2D Platformer.-1948216659.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vultys\Documents\GitHub\Unity3DEducation\2D Platformer" t="IncludeRecursive">
       <e p="2D Platformer.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Audio.cs" t="Include" />
+          <e p="Chest.cs" t="Include" />
           <e p="Creature.cs" t="Include" />
           <e p="Dragon.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="HeroParameters.cs" t="Include" />
           <e p="HUD.cs" t="Include" />
           <e p="IDestructable.cs" t="Include" />
+          <e p="InventoryItem.cs" t="Include" />
+          <e p="InventoryUIButton.cs" t="Include" />
           <e p="Knight.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="Princess.cs" t="Include" />
           <e p="Stair.cs" t="Include" />
         </e>
       </e>

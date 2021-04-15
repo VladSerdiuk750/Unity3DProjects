@@ -44,18 +44,20 @@ public class Dragon : Creature
 
     public void Attack()
     {
-        var hitPosition = transform.TransformPoint(hitCollider.offset);
-        var hits = Physics2D.OverlapCircleAll(hitPosition, hitCollider.radius);
+        Vector3 hitPosition = transform.TransformPoint(hitCollider.offset);
+        DoHit(hitPosition, hitCollider.radius, Damage);
+    }
 
-        foreach (var hit in hits)
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<Knight>() != null)
         {
-            if (!GameObject.Equals(hit.gameObject, gameObject))
+            for (int i = 0; i < other.contacts.Length; i++)
             {
-                var destructable = hit.gameObject.GetComponent<IDestructable>();
-
-                if (destructable != null)
+                Vector2 fromDragonToContactVector = other.contacts[i].point - (Vector2)transform.position;
+                if (Vector2.Angle(fromDragonToContactVector, Vector2.up) < 45)
                 {
-                    destructable.Hit(damage);
+                    Die();
                 }
             }
         }

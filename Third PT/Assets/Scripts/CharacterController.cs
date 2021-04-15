@@ -5,7 +5,19 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof (Rigidbody))]
 public class CharacterController : Character
 {
-    private Rigidbody _rigidbody;   //кэшированный компонент Rigidbody (чтобы не создавать каждый раз, когда обращаемся)
+    private Rigidbody _rigidbody;//кэшированный компонент Rigidbody (чтобы не создавать каждый раз, когда обращаемся)
+
+    private Animator animator;
+
+    private float currentCameraY;
+
+    [SerializeField]
+    private Transform RightHandPlace;
+
+    [SerializeField] private Transform LeftHandPlace;
+    
+    [SerializeField]
+    private float cameraTurnSpeed;
 
     [SerializeField]
     private float maxSpeed; 
@@ -19,6 +31,7 @@ public class CharacterController : Character
     [SerializeField]
     private float maxSlope = 30f;   //Максимальный уклон, по которому может идти персонаж
 
+    [SerializeField]
     private bool onGround = false;  //Стоит ли персонаж на подходящей поверхности (или летит/падает)
 
 	[SerializeField]
@@ -28,6 +41,7 @@ public class CharacterController : Character
     void Awake ()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody>();  //Находим и запоминаем (кэшируем) компонент Rigidbody
+        animator = gameObject.GetComponent<Animator>();
     }
 	
 	void Start ()
@@ -51,9 +65,21 @@ public class CharacterController : Character
     //Вызывается каждый кадр. Частота может меняться в зависимости от сложности рендеринга и мощности компьтера.
     void Update ()
     {
-        LookAtTarget(); //Поворачиваем персонажа к курсору 
+        MouseLook(); //Поворачиваем персонажа к курсору 
 		Shoot();
-        UpdateTimer();  
+        UpdateTimer();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
 	private void Shoot()
@@ -74,19 +100,59 @@ public class CharacterController : Character
     //Вызывается каждый шаг просчета физики, вне зависимости от FPS (вне зависимости от скорости рендеринга)
     void FixedUpdate()
     {
-        if (onGround)   //если стоим на земле
-        {
-            ApplyMovingForce(); //прикладываем к персонажу горизонтальную силу, соответствующую осям ввода (кнопкам WSAD или стрелкам)
+        animator.SetFloat("vSpeed", Input.GetAxis("Vertical"));
+        animator.SetFloat("hSpeed", Input.GetAxis("Horizontal"));
 
-            if (Input.GetKeyDown(KeyCode.Space))    //Если игрок нажал "пробел"
+
+        if (onGround) //если стоим на земле
+        {
+            animator.applyRootMotion = true;
+
+            if (Input.GetKeyDown(KeyCode.Space)) //Если игрок нажал "пробел"
             {
-                _rigidbody.AddForce(Vector3.up * jumpForce);    //прикладываем к Rigidbody силу, направленную вверх, и имеющую величину, равную jumpForce.
+                animator.SetTrigger("jump");
             }
-            else
-            {
-                _rigidbody.velocity = Vector3.ClampMagnitude(_rigidbody.velocity, maxSpeed);
-            }
+
+            animator.SetBool("inAir", false);
         }
+        else
+        {
+            transform.Translate(new Vector3(Input.GetAxis("Horizontal") * 0.1f, 0, 
+                Input.GetAxis("Vertical") * 0.1f));
+
+            animator.applyRootMotion = false;
+            animator.SetBool("inAir", true);
+        }
+    }
+
+    void ApplyJumpForce()
+    {
+        _rigidbody.AddForce(Vector3.up *
+                            jumpForce); //прикладываем к Rigidbody силу, направленную вверх, и имеющую величину, равную jumpForce.
+    }
+
+    void MouseLook()
+    {
+        transform.RotateAround(transform.position, Vector3.up, Input.GetAxis("Mouse X") * 
+                                                               cameraTurnSpeed);
+
+        Vector3 cameraPosition = transform.position - (transform.forward * 3);
+        cameraPosition.y += 2.5f;
+        
+        Vector3 cameraTargetPosition = transform.position = transform.position;
+        cameraTargetPosition.y += 2f;
+
+        currentCameraY -= Input.GetAxis("Mouse Y") * 0.3f;
+        currentCameraY = Mathf.Clamp(currentCameraY, -3, 3);
+        cameraPosition.y += currentCameraY;
+        
+        Quaternion cameraRotation = Quaternion.LookRotation(cameraTargetPosition - cameraPosition);
+
+        float smoothing = 0.5f;
+
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, cameraPosition, smoothing);
+        Camera.main.transform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, cameraRotation, smoothing);
+        Gun.parent.parent.rotation = cameraRotation;
     }
 
     // Проверяем, подходит ли поверхность коллайдера для того, чтобы персонаж на ней стоял.
@@ -122,7 +188,7 @@ public class CharacterController : Character
 		//Чтобы этого не было, нормализуем результирующий вектор (установим его длину равной 1):
 		resultXZForce.Normalize();
 
-		resultXZForce = resultXZForce * movingForce; //умножаем результирующий вектор на силу движения персонажа (задаем скорость)
+		resultXZForce *= movingForce; //умножаем результирующий вектор на силу движения персонажа (задаем скорость)
 
 
 		if (resultXZForce.magnitude > 0)
@@ -178,4 +244,30 @@ public class CharacterController : Character
         return shootDirection;
     }
 
+
+    private void OnAnimatorIK(int layerIndex)
+    {
+        ///Left Hand:
+        
+        animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
+        animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1);
+        
+        
+        animator.SetIKPosition(AvatarIKGoal.LeftHand, LeftHandPlace.position);
+        animator.SetIKRotation(AvatarIKGoal.LeftHand, LeftHandPlace.rotation);
+        
+        ///Right Hand:
+        
+        animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+        animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1);
+        
+        animator.SetIKPosition(AvatarIKGoal.RightHand, RightHandPlace.position);
+        animator.SetIKRotation(AvatarIKGoal.RightHand, RightHandPlace.rotation);
+        
+        ///Head:
+        
+        animator.SetLookAtWeight(1);
+        
+        animator.SetLookAtPosition(Gun.position + (Gun.forward * 10));
+    }
 }
